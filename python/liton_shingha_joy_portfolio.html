@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Liton Shingha Joy — Senior Software Engineer with 7 years of experience in Python, web development, data analytics, databases, and digital marketing." />
+  <title>Liton Shingha Joy | Senior Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b1020",
+            panel: "#111a2e",
+            accent: "#60a5fa",
+            mint: "#5eead4"
+          },
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 0 50px rgba(96,165,250,.15)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: "DM Sans", sans-serif; }
+    h1,h2,h3,.display { font-family: "Space Grotesk", sans-serif; }
+    .grid-bg {
+      background-image: linear-gradient(rgba(148,163,184,.055) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(148,163,184,.055) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #93c5fd, #5eead4);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .reveal { opacity: 0; transform: translateY(18px); transition: .65s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .skill-pill { transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+    .skill-pill:hover { transform: translateY(-3px); border-color: rgba(94,234,212,.5); background: rgba(94,234,212,.08); }
+  </style>
+</head>
+<body class="bg-ink text-slate-200 selection:bg-blue-400/30 selection:text-white">
+  <!-- Navigation -->
+  <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-ink/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+      <a href="#home" class="display text-lg font-bold tracking-tight text-white">L<span class="text-mint">.</span>JOY</a>
+      <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
+        <a class="hover:text-mint transition" href="#about">About</a>
+        <a class="hover:text-mint transition" href="#skills">Skills</a>
+        <a class="hover:text-mint transition" href="#services">Services</a>
+        <a class="hover:text-mint transition" href="#projects">Projects</a>
+        <a class="hover:text-mint transition" href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="rounded-full border border-blue-300/40 px-4 py-2 text-sm font-semibold text-blue-200 transition hover:bg-blue-300 hover:text-slate-950">Let's talk <span aria-hidden="true">↗</span></a>
+      <button id="menuBtn" class="ml-3 rounded-lg border border-white/15 p-2 text-white md:hidden" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4 text-sm text-slate-300">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative isolate flex min-h-screen items-center overflow-hidden px-5 pb-20 pt-32 lg:px-8">
+      <div class="grid-bg absolute inset-0 -z-20"></div>
+      <div class="absolute -right-40 top-24 -z-10 h-[480px] w-[480px] rounded-full bg-blue-500/15 blur-[120px]"></div>
+      <div class="absolute -bottom-48 left-0 -z-10 h-[420px] w-[420px] rounded-full bg-teal-400/10 blur-[120px]"></div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[1.2fr_.8fr]">
+        <div class="reveal">
+          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-mint/25 bg-mint/5 px-4 py-2 text-xs font-semibold uppercase tracking-[.18em] text-mint">
+            <span class="h-2 w-2 rounded-full bg-mint shadow-[0_0_12px_#5eead4]"></span>
+            Available for opportunities
+          </div>
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[.28em] text-blue-300">Hello, I'm</p>
+          <h1 class="display max-w-3xl text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Liton Shingha<br><span class="gradient-text">Joy.</span>
+          </h1>
+          <h2 class="mt-6 text-xl font-semibold text-slate-200 sm:text-2xl">Senior Software Engineer</h2>
+          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
+            I build practical digital solutions through software development, data analytics, database management, and digital marketing — backed by <strong class="font-semibold text-white">7 years of professional experience</strong>.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#projects" class="rounded-full bg-blue-400 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-glow transition hover:-translate-y-1 hover:bg-blue-300">Explore my work <span aria-hidden="true">↗</span></a>
+            <a href="#contact" class="rounded-full border border-white/20 px-7 py-3.5 text-sm font-bold text-white transition hover:border-mint/60 hover:text-mint">Contact me</a>
+          </div>
+          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/10 pt-7">
+            <div><p class="display text-3xl font-bold text-white">7<span class="text-mint">+</span></p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Years experience</p></div>
+            <div><p class="display text-3xl font-bold text-white">6<span class="text-mint">+</span></p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Core skill areas</p></div>
+            <div><p class="display text-3xl font-bold text-white">360°</p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Digital solutions</p></div>
+          </div>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-md">
+          <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blue-400/20 to-teal-300/10 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/90 p-6 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-white/10 pb-5">
+              <div class="flex gap-2"><span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-300"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span></div>
+              <span class="font-mono text-xs text-slate-500">joy.profile</span>
+            </div>
+            <div class="py-8 font-mono text-sm leading-8">
+              <p class="text-slate-500">// A little about me</p>
+              <p><span class="text-fuchsia-300">const</span> <span class="text-blue-200">developer</span> = {</p>
+              <p class="pl-5"><span class="text-mint">name</span>: <span class="text-amber-200">"Liton Shingha Joy"</span>,</p>
+              <p class="pl-5"><span class="text-mint">role</span>: <span class="text-amber-200">"Senior Software Engineer"</span>,</p>
+              <p class="pl-5"><span class="text-mint">experience</span>: <span class="text-orange-200">7</span>,</p>
+              <p class="pl-5"><span class="text-mint">focus</span>: [</p>
+              <p class="pl-10 text-amber-200">"Python & Web Development",</p>
+              <p class="pl-10 text-amber-200">"Data & Databases",</p>
+              <p class="pl-10 text-amber-200">"Digital Marketing"</p>
+              <p class="pl-5">]</p><p>};</p>
+              <div class="mt-7 rounded-xl border border-mint/20 bg-mint/5 p-4">
+                <div class="mb-2 flex items-center gap-2 text-xs text-mint"><span class="h-2 w-2 rounded-full bg-mint"></span> MINDSET</div>
+                <p class="font-sans text-sm leading-6 text-slate-300">Build with purpose. Solve with clarity. Improve continuously.</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -left-7 hidden rounded-xl border border-white/10 bg-slate-900 px-4 py-3 shadow-xl sm:block">
+            <p class="text-xs text-slate-500">Primary language</p><p class="mt-1 font-semibold text-white">Python <span class="text-mint">●</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">01 / About me</p>
+          <h2 class="display text-4xl font-bold leading-tight text-white sm:text-5xl">Technology with a <span class="gradient-text">practical purpose.</span></h2>
+        </div>
+        <div class="reveal">
+          <p class="text-lg leading-8 text-slate-300">I'm Liton Shingha Joy, a Senior Software Engineer with 7 years of experience working across technology and digital operations. My work brings together programming, responsive web interfaces, data analysis, database tools, and professional digital communication.</p>
+          <p class="mt-5 leading-8 text-slate-400">I enjoy turning complex tasks into clear, reliable workflows — whether that's developing a web solution with Python and HTMX, making business data easier to understand with Excel and Power BI, or supporting growth through lead generation and email marketing.</p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5"><span class="text-2xl">⌘</span><h3 class="mt-3 font-bold text-white">Problem solving</h3><p class="mt-2 text-sm leading-6 text-slate-400">Practical, structured approaches to everyday business and technical challenges.</p></div>
+            <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5"><span class="text-2xl">↗</span><h3 class="mt-3 font-bold text-white">Continuous growth</h3><p class="mt-2 text-sm leading-6 text-slate-400">Combining technology, analytics, and communication to deliver better outcomes.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mb-12 max-w-2xl">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">02 / Expertise</p>
+          <h2 class="display text-4xl font-bold text-white sm:text-5xl">Tools I work <span class="gradient-text">with.</span></h2>
+          <p class="mt-4 leading-7 text-slate-400">A versatile skill set across development, analytics, databases, and digital marketing.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 text-xl text-blue-300">⌨</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Development</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-400">Building web experiences and application functionality.</p>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Python</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">HTML5</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">CSS3</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">HTMX</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Tailwind CSS</span></div>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-300/10 text-xl text-mint">▥</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Data & Analytics</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-400">Organizing information and turning data into useful insights.</p>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Microsoft Excel</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Power BI</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Reporting</span></div>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-400/10 text-xl text-violet-300">▤</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Database & Office</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-400">Managing records, structured information, and documentation.</p>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Database Management</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">MS Access</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">MS Word</span></div>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-300/10 text-xl text-amber-200">✉</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Digital Marketing</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-400">Supporting outreach, audience development, and online growth.</p>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Email Marketing</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Lead Generation</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Web Marketing</span></div>
+          </article>
+          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6 md:col-span-2">
+            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-rose-300/10 text-xl text-rose-200">✎</div>
+            <h3 class="mt-5 text-lg font-bold text-white">Professional Communication</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-400">Professional correspondence, business communication, and clear written content for digital and workplace environments.</p>
+            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Business Correspondence</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Professional Writing</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Web Communication</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="border-y border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mb-12">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">03 / What I do</p>
+          <h2 class="display text-4xl font-bold text-white sm:text-5xl">Services & <span class="gradient-text">solutions.</span></h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-blue-300">01</p><h3 class="mt-7 font-bold text-white">Web Development</h3><p class="mt-3 text-sm leading-6 text-slate-400">Responsive web pages and Python-powered web solutions.</p></div>
+          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-mint">02</p><h3 class="mt-7 font-bold text-white">Data & Reporting</h3><p class="mt-3 text-sm leading-6 text-slate-400">Excel reporting, Power BI dashboards, and data organization.</p></div>
+          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-violet-300">03</p><h3 class="mt-7 font-bold text-white">Database Solutions</h3><p class="mt-3 text-sm leading-6 text-slate-400">Database organization and Microsoft Access-based workflows.</p></div>
+          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-amber-200">04</p><h3 class="mt-7 font-bold text-white">Digital Outreach</h3><p class="mt-3 text-sm leading-6 text-slate-400">Lead generation, email marketing, and professional correspondence.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="px-5 py-24 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="reveal mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div><p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">04 / Selected work</p><h2 class="display text-4xl font-bold text-white sm:text-5xl">Projects & <span class="gradient-text">highlights.</span></h2></div>
+          <p class="max-w-md text-sm leading-6 text-slate-400">Add your real project names, screenshots, and live links here to turn this section into a strong portfolio showcase.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60">
+            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-blue-500/20 via-blue-400/5 to-teal-300/10"><div class="rounded-2xl border border-blue-200/20 bg-ink/70 p-6 text-center shadow-glow"><span class="text-4xl text-blue-300">⌘</span><p class="mt-2 font-mono text-xs text-slate-400">PYTHON / HTMX</p></div></div>
+            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Web development</p><h3 class="mt-2 text-xl font-bold text-white">Python Web Application</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to showcase a Python-based application, its key features, and the problem it solves.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
+          </article>
+          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60">
+            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-teal-400/20 via-emerald-400/5 to-blue-300/10"><div class="rounded-2xl border border-mint/20 bg-ink/70 p-6 text-center"><span class="text-4xl text-mint">▥</span><p class="mt-2 font-mono text-xs text-slate-400">EXCEL / POWER BI</p></div></div>
+            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Data analytics</p><h3 class="mt-2 text-xl font-bold text-white">Business Dashboard</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to feature an interactive dashboard, business reporting, or data analysis project.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
+          </article>
+          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60 md:col-span-2 lg:col-span-1">
+            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-violet-400/20 via-fuchsia-400/5 to-blue-300/10"><div class="rounded-2xl border border-violet-200/20 bg-ink/70 p-6 text-center"><span class="text-4xl text-violet-300">✉</span><p class="mt-2 font-mono text-xs text-slate-400">MARKETING / CRM</p></div></div>
+            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Digital marketing</p><h3 class="mt-2 text-xl font-bold text-white">Lead Generation Workflow</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to present an outreach campaign, lead workflow, or marketing process.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative overflow-hidden border-t border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
+      <div class="absolute -right-32 top-0 h-80 w-80 rounded-full bg-blue-500/10 blur-[100px]"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
+        <div class="reveal">
+          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">05 / Get in touch</p>
+          <h2 class="display text-4xl font-bold leading-tight text-white sm:text-5xl">Have a project in mind?<br><span class="gradient-text">Let's connect.</span></h2>
+          <p class="mt-6 max-w-lg leading-7 text-slate-400">I'm open to discussing software development, data analytics, database solutions, and digital marketing opportunities.</p>
+          <div class="mt-9 space-y-4 text-sm">
+            <p class="flex items-center gap-3 text-slate-300"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-mint">✉</span> your.email@example.com</p>
+            <p class="flex items-center gap-3 text-slate-300"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-mint">⌖</span> Bangladesh</p>
+          </div>
+          <p class="mt-6 text-xs text-slate-500">Update the email and location details with your preferred public contact information.</p>
+        </div>
+        <form id="contactForm" class="reveal rounded-3xl border border-white/10 bg-ink/80 p-6 sm:p-8">
+          <div class="grid gap-5 sm:grid-cols-2">
+            <label class="text-sm font-medium text-slate-300">Your name<input required name="name" type="text" placeholder="John Smith" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
+            <label class="text-sm font-medium text-slate-300">Your email<input required name="email" type="email" placeholder="john@example.com" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
+          </div>
+          <label class="mt-5 block text-sm font-medium text-slate-300">Subject<input required name="subject" type="text" placeholder="How can I help?" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
+          <label class="mt-5 block text-sm font-medium text-slate-300">Message<textarea required name="message" rows="5" placeholder="Tell me a little about your project..." class="mt-2 w-full resize-y rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></textarea></label>
+          <button type="submit" class="mt-6 w-full rounded-full bg-blue-400 px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-blue-300">Prepare email <span aria-hidden="true">↗</span></button>
+          <p id="formNote" class="mt-3 text-center text-xs text-slate-500">This form opens your email app; it does not send or store messages on a server.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-ink px-5 py-7 lg:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
+      <a href="#home" class="display font-bold text-white">L<span class="text-mint">.</span>JOY</a>
+      <p class="text-xs text-slate-500">© <span id="year"></span> Liton Shingha Joy. All rights reserved.</p>
+      <a href="#home" class="text-xs text-slate-400 transition hover:text-mint">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Reveal sections as they enter the viewport
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Dynamic copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form: prepare an email draft using the visitor's email application.
+    // Replace the placeholder below with your real public email address.
+    const YOUR_EMAIL = 'your.email@example.com';
+    document.getElementById('contactForm').addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const subject = encodeURIComponent(data.get('subject'));
+      const body = encodeURIComponent(
+        `Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`
+      );
+      window.location.href = `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
