@@ -1,315 +1,464 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Liton Shingha Joy — Senior Software Engineer with 7 years of experience in Python, web development, data analytics, databases, and digital marketing." />
-  <title>Liton Shingha Joy | Senior Software Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: "#0b1020",
-            panel: "#111a2e",
-            accent: "#60a5fa",
-            mint: "#5eead4"
-          },
-          fontFamily: {
-            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
-          },
-          boxShadow: {
-            glow: "0 0 50px rgba(96,165,250,.15)"
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: "DM Sans", sans-serif; }
-    h1,h2,h3,.display { font-family: "Space Grotesk", sans-serif; }
-    .grid-bg {
-      background-image: linear-gradient(rgba(148,163,184,.055) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(148,163,184,.055) 1px, transparent 1px);
-      background-size: 42px 42px;
-      mask-image: linear-gradient(to bottom, black, transparent 90%);
-    }
-    .gradient-text {
-      background: linear-gradient(90deg, #93c5fd, #5eead4);
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .reveal { opacity: 0; transform: translateY(18px); transition: .65s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .skill-pill { transition: transform .2s ease, border-color .2s ease, background .2s ease; }
-    .skill-pill:hover { transform: translateY(-3px); border-color: rgba(94,234,212,.5); background: rgba(94,234,212,.08); }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>জেসিকা বিউটি পার্লার, চট্টগ্রাম</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap">
+<style>
+:root{--bg:#fff8f6;--card:#fff;--text:#2b1d22;--muted:#6f5b62;--pri:#b8325f;--pri2:#e88aa8;--soft:#fde7ee;--line:#f2d5de;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1317;--card:#271b21;--text:#f7eaee;--muted:#c3aab3;--pri:#f07aa2;--pri2:#b8325f;--soft:#33222a;--line:#44303a}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Hind Siliguri',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+.wrap{max-width:960px;margin:auto;padding:0 18px}
+section{padding:44px 0}
+h2{font-size:1.6rem;margin:0 0 6px;text-align:center}
+.sub{color:var(--muted);text-align:center;margin:0 0 26px}
+.hero{background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;text-align:center;padding:64px 0 56px}
+.hero h1{font-size:2.1rem;margin:8px 0;line-height:1.3}
+.hero p{max-width:560px;margin:10px auto 24px;opacity:.95}
+.tag{display:inline-block;background:rgba(255,255,255,.2);padding:4px 14px;border-radius:99px;font-size:.9rem}
+.btn{display:inline-block;background:#fff;color:#b8325f;font-weight:700;padding:13px 28px;border-radius:99px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.15)}
+.btn.alt{background:var(--pri);color:#fff}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 4px;font-size:1.1rem;color:var(--pri)}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.ico{font-size:1.8rem}
+.price{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.97rem}
+.price b{color:var(--pri);white-space:nowrap}
+.note{font-size:.85rem;color:var(--muted);text-align:center;margin-top:16px}
+.ph{border-style:dashed}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{margin:8px 0 0;color:var(--muted)}
+.cta{background:var(--soft);text-align:center;border-radius:22px;padding:36px 18px}
+footer{text-align:center;color:var(--muted);padding:26px 0 40px;font-size:.9rem}
+.cb{max-width:420px;margin:22px auto 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;text-align:left}
+.cb label{font-weight:700;display:block;margin-bottom:8px}
+.cb input{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--bg);color:var(--text)}
+.cb button{width:100%;margin-top:12px;border:0;cursor:pointer;font:inherit;font-weight:700;background:var(--pri);color:#fff;padding:14px;border-radius:99px}
+.cb .err{color:#c0392b;font-size:.88rem;margin:8px 0 0;min-height:1.2em}
+:root{--sh:0 1px 0 rgba(255,255,255,.9) inset,0 2px 0 #f2d5de,0 14px 26px -10px rgba(184,50,95,.35);--shh:0 1px 0 rgba(255,255,255,.9) inset,0 4px 0 #efc3d1,0 26px 36px -12px rgba(184,50,95,.45);--bsh:#8f2347}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--sh:0 1px 0 rgba(255,255,255,.08) inset,0 2px 0 #12090d,0 14px 26px -8px rgba(0,0,0,.7);--shh:0 1px 0 rgba(255,255,255,.1) inset,0 4px 0 #12090d,0 26px 36px -10px rgba(240,122,162,.3);--bsh:#7a1d3d}}
+:root[data-theme="dark"]{--bg:#1b1317;--card:#271b21;--text:#f7eaee;--muted:#c3aab3;--pri:#f07aa2;--pri2:#b8325f;--soft:#33222a;--line:#44303a;--sh:0 1px 0 rgba(255,255,255,.08) inset,0 2px 0 #12090d,0 14px 26px -8px rgba(0,0,0,.7);--shh:0 1px 0 rgba(255,255,255,.1) inset,0 4px 0 #12090d,0 26px 36px -10px rgba(240,122,162,.3);--bsh:#7a1d3d}
+body{background:radial-gradient(900px 500px at 10% -5%,var(--soft),transparent 60%),radial-gradient(800px 500px at 100% 30%,var(--soft),transparent 60%),var(--bg);transition:background .3s,color .3s}
+.hero{position:relative;overflow:hidden;box-shadow:0 18px 40px -16px rgba(184,50,95,.6)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{text-shadow:0 3px 0 rgba(0,0,0,.14),0 12px 24px rgba(0,0,0,.25)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;animation:fl 7s ease-in-out infinite}
+.hero::before{width:190px;height:190px;left:-50px;top:30px;background:radial-gradient(circle at 30% 28%,#fff,rgba(255,255,255,.25) 45%,rgba(255,255,255,.05) 72%);box-shadow:0 26px 40px rgba(0,0,0,.18)}
+.hero::after{width:120px;height:120px;right:-20px;bottom:20px;background:radial-gradient(circle at 30% 28%,#fff,rgba(255,255,255,.28) 45%,rgba(255,255,255,.05) 72%);box-shadow:0 20px 30px rgba(0,0,0,.18);animation-delay:-3s}
+@keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.grid{perspective:1100px}
+.card{box-shadow:var(--sh);transition:transform .28s ease,box-shadow .28s ease;transform-style:preserve-3d}
+.card:hover{transform:translateY(-8px) rotateX(5deg) rotateY(-4deg);box-shadow:var(--shh)}
+.ico{width:56px;height:56px;display:grid;place-items:center;border-radius:16px;margin-bottom:8px;background:linear-gradient(145deg,var(--soft),var(--card));box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 5px 0 var(--line),0 12px 16px -6px rgba(184,50,95,.35)}
+details{box-shadow:var(--sh)}
+.btn{background:linear-gradient(180deg,#fff,#ffe3ec);box-shadow:0 6px 0 #e3b3c4,0 16px 24px -6px rgba(0,0,0,.3);transition:transform .12s,box-shadow .12s}
+.btn.alt{background:linear-gradient(180deg,var(--pri2),var(--pri));color:#fff;box-shadow:0 6px 0 var(--bsh),0 16px 24px -6px rgba(184,50,95,.5)}
+.btn:active{transform:translateY(5px);box-shadow:0 1px 0 var(--bsh),0 6px 10px -4px rgba(0,0,0,.3)}
+.cb{box-shadow:var(--sh)}
+.cb button{background:linear-gradient(180deg,var(--pri2),var(--pri));box-shadow:0 5px 0 var(--bsh),0 14px 20px -6px rgba(184,50,95,.5);transition:transform .12s,box-shadow .12s}
+.cb button:active{transform:translateY(4px);box-shadow:0 1px 0 var(--bsh)}
+.cta{box-shadow:var(--sh)}
+#tg{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:20;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;font-size:1.3rem;background:var(--card);color:var(--text);box-shadow:var(--sh)}
+#tg:active{transform:translateY(2px)}
+
+.price{font-size:1.08rem;padding:9px 0;align-items:center}
+.price span{font-weight:700;color:var(--text);text-shadow:0 1px 0 rgba(255,255,255,.6),0 2px 3px rgba(184,50,95,.18)}
+.price b{font-weight:700;font-size:1.05rem;color:#fff;background:linear-gradient(180deg,var(--pri2),var(--pri));padding:3px 12px;border-radius:99px;text-shadow:0 2px 0 rgba(0,0,0,.28);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 3px 0 var(--bsh),0 8px 12px -4px rgba(184,50,95,.55);transition:transform .15s}
+.price:hover b{transform:translateY(-2px)}
+.card h3{font-weight:700;font-size:1.25rem;text-shadow:0 2px 0 rgba(255,255,255,.55),0 5px 8px rgba(184,50,95,.28)}
+#svc h2,.sub+.grid .card h3{letter-spacing:.2px}
+:root[data-theme="dark"] .price span{text-shadow:0 2px 0 rgba(0,0,0,.5)}
+:root[data-theme="dark"] .card h3{text-shadow:0 2px 0 rgba(0,0,0,.55),0 6px 10px rgba(240,122,162,.25)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .price span{text-shadow:0 2px 0 rgba(0,0,0,.5)}:root:not([data-theme="light"]) .card h3{text-shadow:0 2px 0 rgba(0,0,0,.55),0 6px 10px rgba(240,122,162,.25)}}
+.hero{background:linear-gradient(120deg,#b8325f,#e88aa8,#f48fb1,#b8325f);background-size:300% 300%;animation:gs 10s ease infinite}
+@keyframes gs{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.hero h1{font-size:clamp(2.3rem,9vw,3.4rem);font-weight:700}
+.fx{position:absolute;font-size:2.1rem;animation:fl 6s ease-in-out infinite;filter:drop-shadow(0 10px 6px rgba(0,0,0,.25))}
+.f1{left:7%;top:16%}.f2{right:9%;top:12%;animation-delay:-2s}.f3{left:12%;bottom:10%;animation-delay:-4s}.f4{right:14%;bottom:14%;animation-delay:-1s}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 24px}
+.chips span{background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.45);padding:5px 14px;border-radius:99px;font-weight:700;font-size:.92rem;box-shadow:0 6px 12px -6px rgba(0,0,0,.35)}
+.hero .btn{font-size:1.1rem;animation:pl 2.2s infinite}
+@keyframes pl{0%{box-shadow:0 6px 0 #e3b3c4,0 0 0 0 rgba(255,255,255,.75)}70%{box-shadow:0 6px 0 #e3b3c4,0 0 0 20px rgba(255,255,255,0)}100%{box-shadow:0 6px 0 #e3b3c4,0 0 0 0 rgba(255,255,255,0)}}
+header.hero+section .card{border-top:5px solid var(--pri2)}
+header.hero+section .ico{animation:bn 2.8s ease-in-out infinite}
+header.hero+section .card:nth-child(1) .ico{background:linear-gradient(145deg,#ffe9b0,#ffb74d)}
+header.hero+section .card:nth-child(2) .ico{background:linear-gradient(145deg,#ffd0e0,#f06292);animation-delay:-.7s}
+header.hero+section .card:nth-child(3) .ico{background:linear-gradient(145deg,#d3f5d9,#66bb6a);animation-delay:-1.4s}
+header.hero+section .card:nth-child(4) .ico{background:linear-gradient(145deg,#e6d6ff,#9575cd);animation-delay:-2.1s}
+@keyframes bn{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(-6deg)}}
+.js .rv{opacity:0;transform:translateY(30px)}
+.js .rv.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+.js .rv.in:hover{transform:translateY(-8px) rotateX(5deg) rotateY(-4deg);transition:transform .28s ease,box-shadow .28s ease}
+
+@keyframes hu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes up{from{transform:translateY(110%)}to{transform:none}}
+.hero .wrap>*{animation:hu .8s ease both}
+.hero .wrap>*:nth-child(2){animation-delay:.1s}.hero .wrap>*:nth-child(3){animation-delay:.2s}.hero .wrap>*:nth-child(4){animation-delay:.3s}.hero .wrap>*:nth-child(5){animation-delay:.4s}
+.hero .wrap>.btn{animation:hu .8s .5s both,pl 2.2s 1.5s infinite}
+.mbar{display:none}
+.mb{flex:1;text-align:center;padding:13px 8px;border-radius:99px;font-weight:700;text-decoration:none;color:#fff;box-shadow:0 4px 0 rgba(0,0,0,.25);-webkit-tap-highlight-color:transparent}
+.mb.c{background:linear-gradient(180deg,var(--pri2),var(--pri))}
+.mb.w{background:linear-gradient(180deg,#4ade80,#16a34a)}
+.mb:active{transform:translateY(3px);box-shadow:none}
+@media (max-width:700px){
+  .mbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--card);box-shadow:0 -10px 24px -10px rgba(0,0,0,.3);animation:up .6s .9s both}
+  body{padding-bottom:84px}
+}
+@media (max-width:600px){
+  .grid:has(.ico){grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid:has(.ico) .card{padding:14px}
+  .grid:has(.ico) .card h3{font-size:1.05rem}
+  .grid:has(.ico) .card p{font-size:.88rem}
+  .cb{margin-top:18px}
+  .grid{gap:12px}
+}
+@media (hover:none){
+  .card:active,.js .rv.in:active{transform:translateY(-8px) rotateX(5deg) rotateY(-4deg);box-shadow:var(--shh)}
+  .btn,.cb button{-webkit-tap-highlight-color:transparent}
+}
+
+.hero{background:linear-gradient(120deg,var(--hg1,#b8325f),var(--hg2,#e88aa8),var(--hg1,#b8325f));background-size:300% 300%}
+.btn{color:var(--hg1,#b8325f)}.btn.alt,.mb{color:#fff}
+#pb{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 66px);z-index:20;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;font-size:1.3rem;background:var(--card);color:var(--text);box-shadow:var(--sh)}
+#pp{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 120px);z-index:25;width:min(290px,calc(100vw - 28px));background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 20px 40px -12px rgba(0,0,0,.45);animation:hu .25s ease both}
+#pp[hidden]{display:none}
+#pp h4{margin:0 0 8px;font-size:.95rem;color:var(--muted)}
+#pp .row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+#pp .opt{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--text);padding:9px 6px;border-radius:12px;font:inherit;font-weight:700;font-size:.9rem;cursor:pointer;box-shadow:0 3px 0 var(--line)}
+#pp .opt.on{background:var(--pri);color:#fff;border-color:var(--pri);box-shadow:0 3px 0 var(--bsh)}
+#pp .sw{width:40px;height:40px;border-radius:50%;border:3px solid var(--card);cursor:pointer;box-shadow:0 0 0 1px var(--line),0 5px 8px -2px rgba(0,0,0,.4)}
+#pp .sw.on{box-shadow:0 0 0 3px var(--pri),0 5px 8px -2px rgba(0,0,0,.4);transform:scale(1.1)}
+:root[data-style="flat"]{--sh:0 0 0 transparent;--shh:0 0 0 transparent}
+:root[data-style="flat"] .card:hover,:root[data-style="flat"] .js .rv.in:hover{transform:none}
+:root[data-style="flat"] .price b,:root[data-style="flat"] .btn,:root[data-style="flat"] .cb button,:root[data-style="flat"] .mb,:root[data-style="flat"] .ico{box-shadow:none;text-shadow:none}
+:root[data-style="flat"] .card h3,:root[data-style="flat"] .price span,:root[data-style="flat"] .hero h1{text-shadow:none}
+:root[data-style="flat"] .hero::before,:root[data-style="flat"] .hero::after,:root[data-style="flat"] .fx{display:none}
+.fest .ico{position:relative;overflow:visible}
+.fest p{font-weight:700;font-size:1.15rem;background:linear-gradient(90deg,var(--pri),var(--pri2),var(--pri));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:sh 2.5s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.fest .ico::after{position:absolute;right:-8px;top:-10px;font-size:1rem;animation:tw2 1.8s ease-in-out infinite}
+@keyframes tw2{0%,100%{opacity:0;transform:scale(.4) rotate(0)}50%{opacity:1;transform:scale(1.2) rotate(25deg)}}
+.fe-eid .ico{transform-origin:50% 0;animation:swg 3s ease-in-out infinite;box-shadow:0 0 22px rgba(255,204,64,.55),0 5px 0 var(--line)}
+.fe-eid .ico::after{content:'\2728'}
+@keyframes swg{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(14deg) translateY(-3px)}}
+.fe-puja .ico{animation:flk 1.4s ease-in-out infinite}
+@keyframes flk{0%,100%{transform:scale(1);box-shadow:0 0 10px rgba(255,152,0,.4),0 5px 0 var(--line)}35%{transform:scale(1.1) rotate(-3deg);box-shadow:0 0 26px rgba(255,179,0,.9),0 5px 0 var(--line)}65%{transform:scale(1.04) rotate(2deg);box-shadow:0 0 16px rgba(255,152,0,.6),0 5px 0 var(--line)}}
+.fe-xmas .ico{animation:xm 2.4s ease-in-out infinite}
+.fe-xmas .ico::after{content:'\2744\fe0f'}
+@keyframes xm{0%,100%{transform:translateY(0);filter:hue-rotate(0)}50%{transform:translateY(-8px);filter:hue-rotate(50deg) brightness(1.15)}}
+.fe-nb .ico{animation:pp2 2.4s ease-in-out infinite}
+.fe-nb .ico::after{content:'\1F389'}
+@keyframes pp2{0%,100%{transform:scale(1) rotate(0)}20%{transform:scale(1.2) rotate(-10deg)}40%{transform:scale(1) rotate(10deg)}60%{transform:scale(1.15) rotate(-6deg)}80%{transform:scale(1) rotate(0)}}
+#nm span{display:inline-block;animation:lt 9s ease-in-out infinite both}
+@keyframes lt{0%{opacity:0;transform:translateY(26px) scale(.3) rotate(-15deg)}4%{opacity:1;transform:translateY(-10px) scale(1.25) rotate(6deg)}7%{opacity:1;transform:translateY(0) scale(1) rotate(0)}45%{transform:translateY(-3px)}88%{opacity:1;transform:translateY(0)}96%{opacity:0;transform:translateY(-12px) scale(.8)}100%{opacity:0;transform:translateY(-12px) scale(.8)}}
+.mbar{display:none!important}
+body{padding-bottom:0!important}
+.chips span{position:relative;overflow:hidden;animation:cin .7s cubic-bezier(.2,.9,.3,1.4) both,cbob 3s ease-in-out 1.2s infinite}
+.chips span:nth-child(1){animation-delay:.5s,1.2s}
+.chips span:nth-child(2){animation-delay:.7s,1.6s}
+.chips span:nth-child(3){animation-delay:.9s,2s}
+@keyframes cin{from{opacity:0;transform:translateY(22px) scale(.6)}to{opacity:1;transform:none}}
+@keyframes cbob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.chips span::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:cs 3.2s ease-in-out infinite}
+.chips span:nth-child(2)::after{animation-delay:.6s}
+.chips span:nth-child(3)::after{animation-delay:1.2s}
+@keyframes cs{0%{left:-60%}60%,100%{left:130%}}
+.faqcta{font-size:1.1rem;animation:fp 2.2s infinite}
+@keyframes fp{0%{box-shadow:0 6px 0 var(--bsh),0 0 0 0 rgba(184,50,95,.55)}70%{box-shadow:0 6px 0 var(--bsh),0 0 0 20px rgba(184,50,95,0)}100%{box-shadow:0 6px 0 var(--bsh),0 0 0 0 rgba(184,50,95,0)}}
+.hf{margin-bottom:6px}
+.hf label{margin:10px 0 6px;font-size:.95rem}
+.hf select,.hf textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--bg);color:var(--text)}
+.hf textarea{resize:vertical}
+.hlbox{position:relative;overflow:hidden;background:var(--soft);border:1px solid var(--line);border-radius:22px;padding:20px 14px 18px;text-align:center;box-shadow:var(--sh);margin-bottom:26px}
+.hlbox::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:cs 4s ease-in-out infinite;pointer-events:none}
+.hl{font-size:clamp(1.9rem,7vw,2.5rem);font-weight:700;margin:4px 0 0;background:linear-gradient(90deg,var(--pri),var(--pri2),var(--pri));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:sh 3s linear infinite;filter:drop-shadow(0 3px 0 rgba(0,0,0,.08))}
+.hl::after{content:"";display:block;width:96px;height:5px;border-radius:9px;margin:8px auto 0;background:linear-gradient(90deg,var(--pri2),var(--pri));box-shadow:0 3px 0 var(--bsh)}
+.hlsub{margin:8px 0 0;color:var(--text);font-weight:700}
+.stars span{display:inline-block;font-size:1.5rem;animation:stw 1.8s ease-in-out infinite}
+.stars span:nth-child(2){animation-delay:.2s}.stars span:nth-child(3){animation-delay:.4s}.stars span:nth-child(4){animation-delay:.6s}.stars span:nth-child(5){animation-delay:.8s}
+@keyframes stw{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.3) rotate(15deg);filter:drop-shadow(0 0 8px #ffc400)}}
+.hlbox~.grid{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.rev{position:relative;overflow:hidden;padding:22px 18px 16px;border-top:5px solid var(--pri2)}
+.rev .rq{position:absolute;top:-4px;right:14px;font-size:5rem;line-height:1;color:var(--pri2);opacity:.3;font-family:Georgia,serif;pointer-events:none}
+.rev .rs{color:#ffb300;letter-spacing:3px;font-size:1.15rem;margin-bottom:8px;text-shadow:0 2px 0 rgba(160,100,0,.25);animation:stw2 2.4s ease-in-out infinite;transform-origin:left center}
+@keyframes stw2{0%,100%{transform:scale(1)}50%{transform:scale(1.08);filter:drop-shadow(0 0 6px #ffc400)}}
+.rev .rt{font-size:1.08rem;font-weight:500;color:var(--text);line-height:1.75;margin:0 0 14px}
+.rev .rf{display:flex;align-items:center;gap:12px;border-top:1px dashed var(--line);padding-top:12px}
+.rev .av{flex:none;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700;font-size:1.25rem;background:linear-gradient(145deg,var(--pri2),var(--pri));box-shadow:0 3px 0 var(--bsh),0 9px 12px -4px rgba(184,50,95,.5)}
+.rev .rf b{display:block;color:var(--text);font-size:1.02rem}
+.rev .rf small{color:var(--muted);font-size:.88rem}
+.why3d{position:relative;overflow:hidden;text-align:center;background:linear-gradient(145deg,var(--card),var(--soft));border:1px solid var(--line);border-radius:26px;padding:22px 16px 14px;margin-bottom:28px;box-shadow:0 1px 0 rgba(255,255,255,.8) inset,0 6px 0 var(--line),0 24px 34px -14px rgba(184,50,95,.45);transform:perspective(900px) rotateX(4deg);animation:wf 5s ease-in-out infinite}
+@keyframes wf{0%,100%{transform:perspective(900px) rotateX(4deg) translateY(0)}50%{transform:perspective(900px) rotateX(2deg) translateY(-7px)}}
+.why3d::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:cs 4.5s ease-in-out infinite;pointer-events:none}
+.whybadge{display:inline-block;background:linear-gradient(180deg,var(--pri2),var(--pri));color:#fff;font-weight:700;font-size:.92rem;padding:4px 16px;border-radius:99px;box-shadow:0 3px 0 var(--bsh),0 8px 12px -4px rgba(184,50,95,.5);margin-bottom:10px}
+.h3d{margin:4px 0 6px;font-size:clamp(1.8rem,7vw,2.6rem);font-weight:700;color:var(--pri);letter-spacing:.3px;text-shadow:1px 1px 0 var(--bsh),2px 2px 0 var(--bsh),3px 3px 0 var(--bsh),4px 4px 0 rgba(0,0,0,.2),6px 12px 16px rgba(0,0,0,.28)}
+.why3d .sub{margin:8px 0 0;color:var(--text);font-weight:700;font-size:1.05rem}
+.whyarrow{font-size:1.4rem;margin-top:4px;animation:wb 1.2s ease-in-out infinite}
+@keyframes wb{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+</style>
 </head>
-<body class="bg-ink text-slate-200 selection:bg-blue-400/30 selection:text-white">
-  <!-- Navigation -->
-  <header class="fixed top-0 z-50 w-full border-b border-white/10 bg-ink/85 backdrop-blur-xl">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
-      <a href="#home" class="display text-lg font-bold tracking-tight text-white">L<span class="text-mint">.</span>JOY</a>
-      <div class="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-        <a class="hover:text-mint transition" href="#about">About</a>
-        <a class="hover:text-mint transition" href="#skills">Skills</a>
-        <a class="hover:text-mint transition" href="#services">Services</a>
-        <a class="hover:text-mint transition" href="#projects">Projects</a>
-        <a class="hover:text-mint transition" href="#contact">Contact</a>
-      </div>
-      <a href="#contact" class="rounded-full border border-blue-300/40 px-4 py-2 text-sm font-semibold text-blue-200 transition hover:bg-blue-300 hover:text-slate-950">Let's talk <span aria-hidden="true">↗</span></a>
-      <button id="menuBtn" class="ml-3 rounded-lg border border-white/15 p-2 text-white md:hidden" aria-label="Toggle navigation" aria-expanded="false">
-        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </nav>
-    <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink px-5 py-4 md:hidden">
-      <div class="flex flex-col gap-4 text-sm text-slate-300">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>
+<body>
+<button id="tg" type="button" aria-label="থিম বদলান">🌙</button>
 
-  <main>
-    <!-- Hero -->
-    <section id="home" class="relative isolate flex min-h-screen items-center overflow-hidden px-5 pb-20 pt-32 lg:px-8">
-      <div class="grid-bg absolute inset-0 -z-20"></div>
-      <div class="absolute -right-40 top-24 -z-10 h-[480px] w-[480px] rounded-full bg-blue-500/15 blur-[120px]"></div>
-      <div class="absolute -bottom-48 left-0 -z-10 h-[420px] w-[420px] rounded-full bg-teal-400/10 blur-[120px]"></div>
-      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[1.2fr_.8fr]">
-        <div class="reveal">
-          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-mint/25 bg-mint/5 px-4 py-2 text-xs font-semibold uppercase tracking-[.18em] text-mint">
-            <span class="h-2 w-2 rounded-full bg-mint shadow-[0_0_12px_#5eead4]"></span>
-            Available for opportunities
-          </div>
-          <p class="mb-4 text-sm font-semibold uppercase tracking-[.28em] text-blue-300">Hello, I'm</p>
-          <h1 class="display max-w-3xl text-5xl font-bold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Liton Shingha<br><span class="gradient-text">Joy.</span>
-          </h1>
-          <h2 class="mt-6 text-xl font-semibold text-slate-200 sm:text-2xl">Senior Software Engineer</h2>
-          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">
-            I build practical digital solutions through software development, data analytics, database management, and digital marketing — backed by <strong class="font-semibold text-white">7 years of professional experience</strong>.
-          </p>
-          <div class="mt-9 flex flex-wrap gap-4">
-            <a href="#projects" class="rounded-full bg-blue-400 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-glow transition hover:-translate-y-1 hover:bg-blue-300">Explore my work <span aria-hidden="true">↗</span></a>
-            <a href="#contact" class="rounded-full border border-white/20 px-7 py-3.5 text-sm font-bold text-white transition hover:border-mint/60 hover:text-mint">Contact me</a>
-          </div>
-          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/10 pt-7">
-            <div><p class="display text-3xl font-bold text-white">7<span class="text-mint">+</span></p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Years experience</p></div>
-            <div><p class="display text-3xl font-bold text-white">6<span class="text-mint">+</span></p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Core skill areas</p></div>
-            <div><p class="display text-3xl font-bold text-white">360°</p><p class="mt-1 text-xs uppercase tracking-widest text-slate-500">Digital solutions</p></div>
-          </div>
-        </div>
-        <div class="reveal relative mx-auto w-full max-w-md">
-          <div class="absolute -inset-5 rounded-[2rem] bg-gradient-to-br from-blue-400/20 to-teal-300/10 blur-2xl"></div>
-          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/90 p-6 shadow-2xl">
-            <div class="flex items-center justify-between border-b border-white/10 pb-5">
-              <div class="flex gap-2"><span class="h-2.5 w-2.5 rounded-full bg-rose-400"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-300"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-400"></span></div>
-              <span class="font-mono text-xs text-slate-500">joy.profile</span>
-            </div>
-            <div class="py-8 font-mono text-sm leading-8">
-              <p class="text-slate-500">// A little about me</p>
-              <p><span class="text-fuchsia-300">const</span> <span class="text-blue-200">developer</span> = {</p>
-              <p class="pl-5"><span class="text-mint">name</span>: <span class="text-amber-200">"Liton Shingha Joy"</span>,</p>
-              <p class="pl-5"><span class="text-mint">role</span>: <span class="text-amber-200">"Senior Software Engineer"</span>,</p>
-              <p class="pl-5"><span class="text-mint">experience</span>: <span class="text-orange-200">7</span>,</p>
-              <p class="pl-5"><span class="text-mint">focus</span>: [</p>
-              <p class="pl-10 text-amber-200">"Python & Web Development",</p>
-              <p class="pl-10 text-amber-200">"Data & Databases",</p>
-              <p class="pl-10 text-amber-200">"Digital Marketing"</p>
-              <p class="pl-5">]</p><p>};</p>
-              <div class="mt-7 rounded-xl border border-mint/20 bg-mint/5 p-4">
-                <div class="mb-2 flex items-center gap-2 text-xs text-mint"><span class="h-2 w-2 rounded-full bg-mint"></span> MINDSET</div>
-                <p class="font-sans text-sm leading-6 text-slate-300">Build with purpose. Solve with clarity. Improve continuously.</p>
-              </div>
-            </div>
-          </div>
-          <div class="absolute -bottom-5 -left-7 hidden rounded-xl border border-white/10 bg-slate-900 px-4 py-3 shadow-xl sm:block">
-            <p class="text-xs text-slate-500">Primary language</p><p class="mt-1 font-semibold text-white">Python <span class="text-mint">●</span></p>
-          </div>
-        </div>
-      </div>
-    </section>
+<header class="hero"><span class="fx f1">💄</span><span class="fx f2">✨</span><span class="fx f3">💐</span><span class="fx f4">💅</span><div class="wrap">
+  <span class="tag">📍 চট্টগ্রাম</span>
+  <h1>জেসিকা বিউটি পার্লার</h1>
+  <div style="text-align:center;font-size:clamp(1.8rem,7vw,2.6rem);letter-spacing:.14em;margin:-2px 0 6px;line-height:1.2;text-shadow:0 3px 0 rgba(0,0,0,.14),0 10px 18px rgba(0,0,0,.25);font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-weight:800;font-style:italic;color:#fff;-webkit-text-stroke:1px rgba(143,35,71,.5)" id="nm" aria-label="Jessica">Jessica</div>
+  <p>ফেসিয়াল, হেয়ার কাট, রিবন্ডিং, ভ্রু থ্রেডিং ও আরও অনেক সেবা—সাশ্রয়ী দামে, এক ছাদের নিচে।</p>
+  <div class="chips"><span>💸 ১০০৳ থেকে শুরু</span><span>🎉 উৎসবে ১৫–২৫% ছাড়</span><span>🏠 বাসায় সার্ভিস</span></div>
+  <a class="btn" href="#contact">এখনই অ্যাপয়েন্টমেন্ট নিন</a>
+</div></header>
 
-    <!-- About -->
-    <section id="about" class="border-t border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
-      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[.8fr_1.2fr]">
-        <div class="reveal">
-          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">01 / About me</p>
-          <h2 class="display text-4xl font-bold leading-tight text-white sm:text-5xl">Technology with a <span class="gradient-text">practical purpose.</span></h2>
-        </div>
-        <div class="reveal">
-          <p class="text-lg leading-8 text-slate-300">I'm Liton Shingha Joy, a Senior Software Engineer with 7 years of experience working across technology and digital operations. My work brings together programming, responsive web interfaces, data analysis, database tools, and professional digital communication.</p>
-          <p class="mt-5 leading-8 text-slate-400">I enjoy turning complex tasks into clear, reliable workflows — whether that's developing a web solution with Python and HTMX, making business data easier to understand with Excel and Power BI, or supporting growth through lead generation and email marketing.</p>
-          <div class="mt-8 grid gap-4 sm:grid-cols-2">
-            <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5"><span class="text-2xl">⌘</span><h3 class="mt-3 font-bold text-white">Problem solving</h3><p class="mt-2 text-sm leading-6 text-slate-400">Practical, structured approaches to everyday business and technical challenges.</p></div>
-            <div class="rounded-2xl border border-white/10 bg-white/[.03] p-5"><span class="text-2xl">↗</span><h3 class="mt-3 font-bold text-white">Continuous growth</h3><p class="mt-2 text-sm leading-6 text-slate-400">Combining technology, analytics, and communication to deliver better outcomes.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
+<section><div class="wrap">
+  <div class="why3d"><span class="whybadge">✨ আমাদের বিশেষত্ব</span><h2 class="h3d">কেন জেসিকা বিউটি পার্লার?</h2>
+  <p class="sub">নিজেকে সুন্দর রাখার সহজ ও নির্ভরযোগ্য ঠিকানা</p><div class="whyarrow">⬇️</div></div>
+  <div class="grid">
+    <div class="card"><div class="ico">💸</div><h3>সাশ্রয়ী দাম</h3><p>১০০ টাকা থেকে শুরু—স্পষ্ট প্রাইস লিস্ট, লুকানো খরচ নেই।</p></div>
+    <div class="card"><div class="ico">✨</div><h3>এক জায়গায় সব সেবা</h3><p>ফেসিয়াল, হেয়ার, ভ্রু—সব একসাথে সেরে ফেলুন।</p></div>
+    <div class="card"><div class="ico">🌿</div><h3>হার্বাল ও গোল্ড অপশন</h3><p>ত্বকের ধরন ও বাজেট অনুযায়ী ফেসিয়ালের বিভিন্ন ধরন।</p></div>
+    <div class="card"><div class="ico">👰</div><h3>বিশেষ উপলক্ষের প্রস্তুতি</h3><p>বিয়ে, ঈদ বা পার্টির আগে লুক সাজিয়ে নিন।</p></div>
+  </div>
+</div></section>
 
-    <!-- Skills -->
-    <section id="skills" class="px-5 py-24 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <div class="reveal mb-12 max-w-2xl">
-          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">02 / Expertise</p>
-          <h2 class="display text-4xl font-bold text-white sm:text-5xl">Tools I work <span class="gradient-text">with.</span></h2>
-          <p class="mt-4 leading-7 text-slate-400">A versatile skill set across development, analytics, databases, and digital marketing.</p>
-        </div>
-        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
-            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-400/10 text-xl text-blue-300">⌨</div>
-            <h3 class="mt-5 text-lg font-bold text-white">Development</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-400">Building web experiences and application functionality.</p>
-            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Python</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">HTML5</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">CSS3</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">HTMX</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Tailwind CSS</span></div>
-          </article>
-          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
-            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-300/10 text-xl text-mint">▥</div>
-            <h3 class="mt-5 text-lg font-bold text-white">Data & Analytics</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-400">Organizing information and turning data into useful insights.</p>
-            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Microsoft Excel</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Power BI</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Reporting</span></div>
-          </article>
-          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
-            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-400/10 text-xl text-violet-300">▤</div>
-            <h3 class="mt-5 text-lg font-bold text-white">Database & Office</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-400">Managing records, structured information, and documentation.</p>
-            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Database Management</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">MS Access</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">MS Word</span></div>
-          </article>
-          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6">
-            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-300/10 text-xl text-amber-200">✉</div>
-            <h3 class="mt-5 text-lg font-bold text-white">Digital Marketing</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-400">Supporting outreach, audience development, and online growth.</p>
-            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Email Marketing</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Lead Generation</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Web Marketing</span></div>
-          </article>
-          <article class="reveal rounded-2xl border border-white/10 bg-panel/60 p-6 md:col-span-2">
-            <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-rose-300/10 text-xl text-rose-200">✎</div>
-            <h3 class="mt-5 text-lg font-bold text-white">Professional Communication</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-400">Professional correspondence, business communication, and clear written content for digital and workplace environments.</p>
-            <div class="mt-5 flex flex-wrap gap-2"><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Business Correspondence</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Professional Writing</span><span class="skill-pill rounded-full border border-white/10 px-3 py-1.5 text-xs">Web Communication</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
+<section style="background:var(--soft)"><div class="wrap">
+  <h2>আমাদের সার্ভিস ও দাম</h2>
+  <p class="sub">কম দাম থেকে শুরু—১০০ টাকা থেকেই সেবা</p>
+  <div class="grid">
+    <div class="card"><h3>💆‍♀️ ফেসিয়াল ও ব্লীচ</h3><svg viewBox="0 0 240 150" role="img" aria-label="ফেসিয়ালের ছবি" style="width:100%;height:auto;display:block;margin:6px 0 10px;border-radius:14px"><defs><linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbd0de"/><stop offset="1" stop-color="#e88aa8"/></linearGradient><radialGradient id="fskin" cx=".4" cy=".3" r=".9"><stop offset="0" stop-color="#ffe3cf"/><stop offset="1" stop-color="#f2b896"/></radialGradient><radialGradient id="fglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs><rect width="240" height="150" fill="url(#fbg)"/><circle cx="120" cy="78" r="70" fill="url(#fglow)"/><path d="M70 80 Q62 18 120 16 Q178 18 170 80 Q172 128 120 140 Q68 128 70 80 Z" fill="#2b1a1f"/><ellipse cx="120" cy="84" rx="42" ry="52" fill="url(#fskin)"/><path d="M78 60 Q120 16 162 60 Q150 40 120 38 Q90 40 78 60 Z" fill="#2b1a1f"/><path d="M82 70 Q120 52 158 70 L156 78 Q120 62 84 78 Z" fill="#b7e4c7" opacity=".9"/><path d="M100 82 Q108 88 116 82" fill="none" stroke="#4a2a2f" stroke-width="2.5" stroke-linecap="round"/><path d="M124 82 Q132 88 140 82" fill="none" stroke="#4a2a2f" stroke-width="2.5" stroke-linecap="round"/><circle cx="98" cy="98" r="8" fill="#f48fb1" opacity=".55"/><circle cx="142" cy="98" r="8" fill="#f48fb1" opacity=".55"/><path d="M108 110 Q120 122 132 110" fill="none" stroke="#c2185b" stroke-width="3" stroke-linecap="round"/><g fill="#fff"><path d="M40 40 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z"/><path d="M196 30 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3z"/><path d="M200 104 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/><path d="M36 112 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/></g></svg><div class="price"><span>হারবাল ফেসিয়াল</span><b>৬০০৳</b></div><div class="price"><span>গোল্ড ফেসিয়াল</span><b>১৫০০৳</b></div><div class="price"><span>গোল্ড মার্কস ফেসিয়াল</span><b>১৬০০৳</b></div><div class="price"><span>ব্রণ ফেসিয়াল</span><b>১০০০৳</b></div><div class="price"><span>ডায়মন্ড ফেসিয়াল</span><b>২০০০৳</b></div><div class="price"><span>ব্রাইডেল ফেসিয়াল</span><b>১৫০০৳</b></div><div class="price"><span>চন্দন ফেসিয়াল</span><b>৮০০৳</b></div><div class="price"><span>সিলভার ফেসিয়াল</span><b>৮০০৳</b></div><div class="price"><span>পেয়ার পলিশ</span><b>৫০০৳</b></div><div class="price"><span>হারবাল ব্লীচ</span><b>৪০০৳</b></div><div class="price"><span>গোল্ড ব্লীচ</span><b>৫০০৳</b></div><div class="price"><span>ম্যাংগো ব্লীচ</span><b>৩০০৳</b></div></div>
+    <div class="card"><h3>✂️ হেয়ার কাট</h3><svg viewBox="0 0 240 150" role="img" aria-label="হেয়ার কাটের ছবি" style="width:100%;height:auto;display:block;margin:6px 0 10px;border-radius:14px"><defs><linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e9d5ff"/><stop offset="1" stop-color="#f48fb1"/></linearGradient><linearGradient id="hhair" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a2d3a"/><stop offset="1" stop-color="#1f1015"/></linearGradient><linearGradient id="hgold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d19a1f"/></linearGradient><linearGradient id="hsteel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f5f5f7"/><stop offset="1" stop-color="#9aa0aa"/></linearGradient></defs><rect width="240" height="150" fill="url(#hbg)"/><path d="M62 150 Q36 80 70 36 Q100 6 130 10 Q176 14 186 70 Q196 112 176 150 Z" fill="url(#hhair)"/><path d="M80 150 Q64 100 84 62 Q96 90 100 150 Z" fill="#7a3b4d" opacity=".55"/><path d="M150 150 Q168 104 154 66 Q140 96 136 150 Z" fill="#7a3b4d" opacity=".55"/><ellipse cx="120" cy="72" rx="31" ry="38" fill="#f6c9a8"/><path d="M88 62 Q106 28 148 40 Q158 52 152 66 Q130 44 100 66 Z" fill="url(#hhair)"/><path d="M105 70 Q110 74 115 70 M125 70 Q130 74 135 70" fill="none" stroke="#4a2a2f" stroke-width="2.2" stroke-linecap="round"/><path d="M112 88 Q120 95 128 88" fill="none" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round"/><circle cx="102" cy="82" r="5.5" fill="#f48fb1" opacity=".5"/><circle cx="138" cy="82" r="5.5" fill="#f48fb1" opacity=".5"/><g transform="translate(188 56) rotate(24)"><path d="M0 0 L8 62 L2 62 Z" fill="url(#hsteel)" stroke="#6b7280" stroke-width=".8"/><path d="M0 0 L-8 62 L-2 62 Z" fill="url(#hsteel)" stroke="#6b7280" stroke-width=".8" transform="rotate(-14 0 0)"/><circle cx="0" cy="2" r="2.6" fill="#d19a1f"/><ellipse cx="13" cy="72" rx="9" ry="11" fill="none" stroke="url(#hgold)" stroke-width="4.5"/><ellipse cx="-15" cy="72" rx="9" ry="11" fill="none" stroke="url(#hgold)" stroke-width="4.5"/></g><g fill="none" stroke="#2b1a1f" stroke-width="2.2" stroke-linecap="round" opacity=".85"><path d="M200 52 q-6 10 2 18"/><path d="M212 62 q-5 8 1 15"/><path d="M194 44 q-4 6 0 11"/></g><g fill="#fff"><path d="M32 30 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5z"/><path d="M214 112 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/><path d="M36 112 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/></g></svg><div class="price"><span>সমান</span><b>১০০৳</b></div><div class="price"><span>সামনে লেয়ার</span><b>১৫০৳</b></div><div class="price"><span>ব্লান্ট কাট</span><b>৩০০৳</b></div><div class="price"><span>ইউ কাট</span><b>৩৫০৳</b></div><div class="price"><span>ভি কাট</span><b>৪০০৳</b></div><div class="price"><span>লেয়ার কাট</span><b>৫০০৳</b></div><div class="price"><span>সেগী</span><b>৫০০৳</b></div><div class="price"><span>বলিয়াম লেয়ার</span><b>৬০০৳</b></div><div class="price"><span>বলিয়াম স্টেপ</span><b>৭০০৳</b></div></div>
+    <div class="card"><h3>💇‍♀️ রিবন্ডিং ও হেয়ার কেয়ার</h3><svg viewBox="0 0 240 150" role="img" aria-label="রিবন্ডিং ও হেয়ার কেয়ারের ছবি" style="width:100%;height:auto;display:block;margin:6px 0 10px;border-radius:14px"><defs><linearGradient id="rbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9c7"/><stop offset="1" stop-color="#f48fb1"/></linearGradient><linearGradient id="rhair" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a1218"/><stop offset=".5" stop-color="#6b2e3f"/><stop offset="1" stop-color="#2a1218"/></linearGradient><linearGradient id="rbot" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#d19a1f"/></linearGradient></defs><rect width="240" height="150" fill="url(#rbg)"/><path d="M52 150 L52 62 Q52 12 100 10 L116 10 Q164 12 164 62 L164 150 Z" fill="url(#rhair)"/><path d="M74 150 L74 70 M92 150 L92 80 M140 150 L140 80 M156 150 L156 70" stroke="#a85a72" stroke-width="3" stroke-linecap="round" opacity=".55"/><path d="M66 40 Q74 24 92 20" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".6"/><ellipse cx="108" cy="68" rx="30" ry="37" fill="#f6c9a8"/><path d="M78 62 Q92 26 138 44 Q140 56 136 66 Q112 42 84 68 Z" fill="url(#rhair)"/><path d="M93 66 Q98 70 103 66 M113 66 Q118 70 123 66" fill="none" stroke="#4a2a2f" stroke-width="2.2" stroke-linecap="round"/><path d="M100 84 Q108 91 116 84" fill="none" stroke="#c2185b" stroke-width="2.6" stroke-linecap="round"/><circle cx="90" cy="78" r="5.5" fill="#f48fb1" opacity=".5"/><circle cx="126" cy="78" r="5.5" fill="#f48fb1" opacity=".5"/><rect x="186" y="46" width="14" height="12" rx="3" fill="#8f2347"/><rect x="176" y="58" width="34" height="66" rx="10" fill="url(#rbot)"/><rect x="182" y="72" width="22" height="28" rx="5" fill="#fff" opacity=".85"/><path d="M193 78 q-6 8 0 14 q6 -6 0 -14z" fill="#d6336c"/><path d="M180 66 Q180 92 182 112" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".55"/><g fill="#fff"><path d="M24 34 l3.5 9 9 3.5 -9 3.5 -3.5 9 -3.5 -9 -9 -3.5 9 -3.5z"/><path d="M222 26 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/><path d="M30 112 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/><path d="M170 18 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/></g></svg><div class="price"><span>হেয়ার রিবন্ডিং</span><b>৪০০০–৮০০০৳</b></div><div class="price"><span>পার্ম স্টেট</span><b>৪০০০–৫০০০৳</b></div><div class="price"><span>বিনি পার্ম</span><b>৩০০০–৫০০০৳</b></div><div class="price"><span>বলিয়াম রিবন্ডিং</span><b>৩০০০–৭০০০৳</b></div><div class="price"><span>হেয়ার কালার</span><b>২০০০–৩০০০৳</b></div><div class="price"><span>ওয়ান স্টেপ কালার</span><b>১৫০৳</b></div><div class="price"><span>হেয়ার SPA</span><b>১০০০৳</b></div><div class="price"><span>হেয়ার ট্রিটমেন্ট</span><b>৫০০–১০০০৳</b></div></div>
+    <div class="card"><h3>🪡 ভ্রু ফ্লাগ</h3><svg viewBox="0 0 240 120" role="img" aria-label="ভ্রু ও চোখের ছবি" style="width:100%;height:auto;display:block;margin:6px 0 10px;border-radius:12px;background:linear-gradient(145deg,var(--soft),var(--card))"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e88aa8"/><stop offset="1" stop-color="#b8325f"/></linearGradient></defs><path d="M45 48 Q120 6 195 48 Q120 24 45 48 Z" fill="#4a2a2f" stroke="#4a2a2f" stroke-width="5" stroke-linejoin="round"/><path d="M52 82 Q120 40 188 82 Q120 112 52 82 Z" fill="#fff" stroke="#4a2a2f" stroke-width="4" stroke-linejoin="round"/><circle cx="120" cy="79" r="19" fill="url(#bg1)"/><circle cx="120" cy="79" r="8" fill="#2b1d22"/><circle cx="114" cy="73" r="4" fill="#fff"/><path d="M20 20 Q70 -5 110 22" fill="none" stroke="#b8325f" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/></svg><div class="price"><span>ভ্রু ফ্লাগ (থ্রেডিং)</span><b>১০০৳</b></div><div class="price"><span>আপার লিপ</span><b>৮০৳</b></div></div>
+  </div>
+  <p class="note">* কিছু সেবার দাম কাজের ধরন ও চুলের দৈর্ঘ্যের উপর নির্ভর করে। পার্লারে এসে সেবা নিতে পারেন; আসতে না পারলে বাসায় গিয়েও সার্ভিস দেওয়া হয় (বাসায় সার্ভিসে আলাদা চার্জ প্রযোজ্য)।</p>
+</div></section>
 
-    <!-- Services -->
-    <section id="services" class="border-y border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <div class="reveal mb-12">
-          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">03 / What I do</p>
-          <h2 class="display text-4xl font-bold text-white sm:text-5xl">Services & <span class="gradient-text">solutions.</span></h2>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-blue-300">01</p><h3 class="mt-7 font-bold text-white">Web Development</h3><p class="mt-3 text-sm leading-6 text-slate-400">Responsive web pages and Python-powered web solutions.</p></div>
-          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-mint">02</p><h3 class="mt-7 font-bold text-white">Data & Reporting</h3><p class="mt-3 text-sm leading-6 text-slate-400">Excel reporting, Power BI dashboards, and data organization.</p></div>
-          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-violet-300">03</p><h3 class="mt-7 font-bold text-white">Database Solutions</h3><p class="mt-3 text-sm leading-6 text-slate-400">Database organization and Microsoft Access-based workflows.</p></div>
-          <div class="reveal rounded-2xl border border-white/10 bg-ink p-6"><p class="text-2xl text-amber-200">04</p><h3 class="mt-7 font-bold text-white">Digital Outreach</h3><p class="mt-3 text-sm leading-6 text-slate-400">Lead generation, email marketing, and professional correspondence.</p></div>
-        </div>
-      </div>
-    </section>
+<section><div class="wrap">
+  <h2>🎉 উৎসবের অফার</h2>
+  <p class="sub">ঈদ, দুর্গাপূজা, বড়দিন ও পহেলা বৈশাখে ১৫% থেকে ২৫% ছাড়</p>
+  <div class="grid">
+    <div class="card fest fe-eid"><div class="ico">🌙</div><h3>ঈদ</h3><p>১৫%–২৫% ছাড়</p></div>
+    <div class="card fest fe-puja"><div class="ico">🪔</div><h3>দুর্গাপূজা</h3><p>১৫%–২৫% ছাড়</p></div>
+    <div class="card fest fe-xmas"><div class="ico">🎄</div><h3>বড়দিন</h3><p>১৫%–২৫% ছাড়</p></div>
+    <div class="card fest fe-nb"><div class="ico">🎊</div><h3>পহেলা বৈশাখ</h3><p>১৫%–২৫% ছাড়</p></div>
+  </div>
+  <p class="note">অফারের বিস্তারিত জানতে কল করুন: 01671319429</p></div></section>
 
-    <!-- Projects -->
-    <section id="projects" class="px-5 py-24 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <div class="reveal mb-12 flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-          <div><p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">04 / Selected work</p><h2 class="display text-4xl font-bold text-white sm:text-5xl">Projects & <span class="gradient-text">highlights.</span></h2></div>
-          <p class="max-w-md text-sm leading-6 text-slate-400">Add your real project names, screenshots, and live links here to turn this section into a strong portfolio showcase.</p>
-        </div>
-        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60">
-            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-blue-500/20 via-blue-400/5 to-teal-300/10"><div class="rounded-2xl border border-blue-200/20 bg-ink/70 p-6 text-center shadow-glow"><span class="text-4xl text-blue-300">⌘</span><p class="mt-2 font-mono text-xs text-slate-400">PYTHON / HTMX</p></div></div>
-            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Web development</p><h3 class="mt-2 text-xl font-bold text-white">Python Web Application</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to showcase a Python-based application, its key features, and the problem it solves.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
-          </article>
-          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60">
-            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-teal-400/20 via-emerald-400/5 to-blue-300/10"><div class="rounded-2xl border border-mint/20 bg-ink/70 p-6 text-center"><span class="text-4xl text-mint">▥</span><p class="mt-2 font-mono text-xs text-slate-400">EXCEL / POWER BI</p></div></div>
-            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Data analytics</p><h3 class="mt-2 text-xl font-bold text-white">Business Dashboard</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to feature an interactive dashboard, business reporting, or data analysis project.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
-          </article>
-          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel/60 md:col-span-2 lg:col-span-1">
-            <div class="flex h-48 items-center justify-center bg-gradient-to-br from-violet-400/20 via-fuchsia-400/5 to-blue-300/10"><div class="rounded-2xl border border-violet-200/20 bg-ink/70 p-6 text-center"><span class="text-4xl text-violet-300">✉</span><p class="mt-2 font-mono text-xs text-slate-400">MARKETING / CRM</p></div></div>
-            <div class="p-6"><p class="text-xs font-semibold uppercase tracking-widest text-mint">Digital marketing</p><h3 class="mt-2 text-xl font-bold text-white">Lead Generation Workflow</h3><p class="mt-3 text-sm leading-6 text-slate-400">A space to present an outreach campaign, lead workflow, or marketing process.</p><span class="mt-5 inline-block text-xs text-slate-500">Replace with your project details →</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
+<section id="home" style="background:var(--soft)"><div class="wrap">
+  <h2>🏠 পার্লারে আসতে না পারলে আমরা আপনার কাছে যাই</h2>
+  <p class="sub">বাসায় বা অনুষ্ঠানে গিয়ে সাজানোর সুবিধা</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🏪</div><h3>পার্লারে এসে</h3><p>সরাসরি পার্লারে এসে সেবা নিন। কোনো অতিরিক্ত চার্জ নেই।</p></div>
+    <div class="card"><div class="ico">🚗</div><h3>বাসায় বা অনুষ্ঠানে</h3><p>আসতে না পারলে আমাদের বিউটিশিয়ান ও পার্লারের সদস্যরা আপনার বাসায় বা অনুষ্ঠানে গিয়ে সার্ভিস দেন। (আলাদা চার্জ প্রযোজ্য)</p><p style="margin-top:10px"><a href="#hform" style="color:var(--pri);font-weight:700">📝 ফর্ম পূরণ করুন →</a></p></div>
+  </div>
+  <p class="note" style="font-size:.95rem">💡 এটা খাবার ডেলিভারির মতো নয়—কোনো পণ্য পাঠানো হয় না। আমাদের বিউটিশিয়ান ও পার্লারের সদস্যরা নিজে গিয়ে আপনাকে সাজিয়ে দেন।</p>
+  <h3 style="text-align:center;margin:26px 0 12px">কীভাবে নেবেন?</h3>
+  <div class="grid">
+    <div class="card"><div class="ico">📞</div><h3>১. জানান</h3><p>কল করুন বা WhatsApp-এ মেসেজ দিন।</p></div>
+    <div class="card"><div class="ico">📅</div><h3>২. সময় ঠিক করুন</h3><p>কোন সেবা, কোথায় ও কখন — তা ঠিক করে নিন।</p></div>
+    <div class="card"><div class="ico">💐</div><h3>৩. আমরা পৌঁছাই</h3><p>নির্দিষ্ট সময়ে আমাদের বিউটিশিয়ান ও পার্লারের সদস্যরা গিয়ে সার্ভিস দেন।</p></div>
+  </div>
+  <div class="cb hf" id="hform" style="max-width:520px"><h3 style="margin:0 0 12px;color:var(--pri);font-size:1.25rem">📝 বাসায়/অনুষ্ঠানে সার্ভিসের ফর্ম</h3>
+    <label for="hn">আপনার নাম</label><input id="hn" type="text" placeholder="যেমন: রুমি" autocomplete="name">
+    <label for="hp">মোবাইল নম্বর</label><input id="hp" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" autocomplete="tel">
+    <label for="ha">ঠিকানা (এলাকাসহ)</label><textarea id="ha" rows="2" placeholder="যেমন: রাজার পুকুর, চট্টগ্রাম"></textarea>
+    <label for="hs">কোন সেবা চান?</label><select id="hs"><option>ফেসিয়াল ও ব্লীচ</option><option>হেয়ার কাট</option><option>রিবন্ডিং ও হেয়ার কেয়ার</option><option>ভ্রু ফ্লাগ</option><option>বিয়ে/অনুষ্ঠানের সাজ</option><option>একাধিক সেবা</option></select>
+    <label for="hd">তারিখ</label><input id="hd" type="date">
+    <label for="ht">সময়</label><input id="ht" type="time">
+    <label for="hm">অতিরিক্ত তথ্য (ঐচ্ছিক)</label><textarea id="hm" rows="2" placeholder="যেমন: অনুষ্ঠানের ধরন, কতজন"></textarea>
+    <button type="button" id="hBtn">📲 WhatsApp-এ পাঠান</button><p class="err" id="hErr"></p>
+    <p class="note" style="margin-top:6px">বাসায় সার্ভিসে আলাদা চার্জ প্রযোজ্য। আমরা কল করে নিশ্চিত করব।</p></div>
+  <p style="text-align:center;margin-top:22px"><a class="btn alt" target="_blank" rel="noopener" href="https://wa.me/8801671319429?text=%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%BE%E0%A6%AF%E0%A6%BC%2F%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%B7%E0%A7%8D%E0%A6%A0%E0%A6%BE%E0%A6%A8%E0%A7%87%20%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BF%E0%A6%B8%20%E0%A6%A8%E0%A6%BF%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A5%A4">🏠 বাসায় সার্ভিসের জন্য WhatsApp করুন</a></p>
+  <p class="note">চার্জের পরিমাণ ও বুকিংয়ের জন্য কল করুন: 01671319429</p>
+</div></section>
 
-    <!-- Contact -->
-    <section id="contact" class="relative overflow-hidden border-t border-white/5 bg-[#0e1527] px-5 py-24 lg:px-8">
-      <div class="absolute -right-32 top-0 h-80 w-80 rounded-full bg-blue-500/10 blur-[100px]"></div>
-      <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
-        <div class="reveal">
-          <p class="mb-3 text-xs font-bold uppercase tracking-[.25em] text-mint">05 / Get in touch</p>
-          <h2 class="display text-4xl font-bold leading-tight text-white sm:text-5xl">Have a project in mind?<br><span class="gradient-text">Let's connect.</span></h2>
-          <p class="mt-6 max-w-lg leading-7 text-slate-400">I'm open to discussing software development, data analytics, database solutions, and digital marketing opportunities.</p>
-          <div class="mt-9 space-y-4 text-sm">
-            <p class="flex items-center gap-3 text-slate-300"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-mint">✉</span> your.email@example.com</p>
-            <p class="flex items-center gap-3 text-slate-300"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-mint">⌖</span> Bangladesh</p>
-          </div>
-          <p class="mt-6 text-xs text-slate-500">Update the email and location details with your preferred public contact information.</p>
-        </div>
-        <form id="contactForm" class="reveal rounded-3xl border border-white/10 bg-ink/80 p-6 sm:p-8">
-          <div class="grid gap-5 sm:grid-cols-2">
-            <label class="text-sm font-medium text-slate-300">Your name<input required name="name" type="text" placeholder="John Smith" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
-            <label class="text-sm font-medium text-slate-300">Your email<input required name="email" type="email" placeholder="john@example.com" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
-          </div>
-          <label class="mt-5 block text-sm font-medium text-slate-300">Subject<input required name="subject" type="text" placeholder="How can I help?" class="mt-2 w-full rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></label>
-          <label class="mt-5 block text-sm font-medium text-slate-300">Message<textarea required name="message" rows="5" placeholder="Tell me a little about your project..." class="mt-2 w-full resize-y rounded-xl border border-white/10 bg-white/[.04] px-4 py-3 text-white outline-none transition placeholder:text-slate-600 focus:border-blue-300/60"></textarea></label>
-          <button type="submit" class="mt-6 w-full rounded-full bg-blue-400 px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-blue-300">Prepare email <span aria-hidden="true">↗</span></button>
-          <p id="formNote" class="mt-3 text-center text-xs text-slate-500">This form opens your email app; it does not send or store messages on a server.</p>
-        </form>
-      </div>
-    </section>
-  </main>
+<section style="padding-top:0"><div class="wrap">
+  <div class="hlbox"><div class="stars"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div><h2 class="hl">কাস্টমারদের মতামত</h2><p class="hlsub">যারা এসেছেন, তারা কী বলেন</p></div>
+  <div class="grid">
+    <div class="card"><p>“ভালো, তাদের সার্ভিস এবং সুন্দর।”</p><p><b>— রুমি, বিজয় নগর</b></p></div>
+    <div class="card"><p>“খুব সুন্দর যত্ন সহকারে সেবা দিয়ে থাকে এবং তাদের আচার-আচরণ ভালো।”</p><p><b>— জেসমিন, কাটগড়</b></p></div>
+    <div class="card"><p>“কথায় এবং কাজে এক।”</p><p><b>— ডলি, রাজার পুকুর</b></p></div>
+    <div class="card"><p>“দাম সাধ্যের মধ্যে।”</p><p><b>— কহিনূর, কন্ট্রোল মোড়</b></p></div>
+    <div class="card"><p>“সুন্দর করে সাজিয়ে দেয়।”</p><p><b>— তুলি, রাজার পুকুর</b></p></div>
+  </div>
+</div></section>
 
-  <footer class="border-t border-white/10 bg-ink px-5 py-7 lg:px-8">
-    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left">
-      <a href="#home" class="display font-bold text-white">L<span class="text-mint">.</span>JOY</a>
-      <p class="text-xs text-slate-500">© <span id="year"></span> Liton Shingha Joy. All rights reserved.</p>
-      <a href="#home" class="text-xs text-slate-400 transition hover:text-mint">Back to top ↑</a>
-    </div>
-  </footer>
+<section style="padding-top:0"><div class="wrap">
+  <h2>সাধারণ প্রশ্ন</h2><p class="sub">&nbsp;</p>
+  <details><summary>আগে থেকে বুকিং লাগবে?</summary><p>সিরিয়াল এড়াতে কল করে আসুন, বিশেষ করে উৎসবের সময়।</p></details>
+  <details><summary>দাম কেমন?</summary><p>সবার সাধ্যের মধ্যে—হেয়ার কাট ১০০৳ আর ফেসিয়াল ৬০০৳ থেকে শুরু।</p></details>
+  <details><summary>বাসায় সার্ভিস আছে?</summary><p>পার্লারে এসে সেবা নেওয়া যায়। যদি পার্লারে আসতে না পারেন, তখন বাসায় গিয়ে সার্ভিস দেওয়া হয়। বাসায় সার্ভিসের জন্য আলাদা চার্জ প্রযোজ্য; চার্জের পরিমাণ ও বুকিংয়ের জন্য কল করুন।</p></details>
+  <details><summary>কোথায় পাব?</summary><p>চট্টগ্রামে। অবস্থান জানতে 01671319429 নম্বরে কল করুন।</p></details>
+  <p style="text-align:center;margin:26px 0 0"><a class="btn alt faqcta" href="#contact">এখনই অ্যাপয়েন্টমেন্ট নিন</a></p>
+</div></section>
 
-  <script>
-    // Mobile navigation
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
-      mobileMenu.classList.toggle('hidden');
-      menuBtn.setAttribute('aria-expanded', String(!isOpen));
-    });
-    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');
-      menuBtn.setAttribute('aria-expanded', 'false');
-    }));
+<section id="contact" style="padding-top:0"><div class="wrap">
+  <div class="cta">
+    <h2>আজই আপনার সময় ঠিক করুন</h2>
+    <p class="sub">কল করে অ্যাপয়েন্টমেন্ট নিন</p>
+    <a class="btn alt" href="tel:+8801671319429">📞 কল করুন: 01671319429</a>
+    <div class="cb"><label for="ph">আপনার মোবাইল নম্বর দিন, আমরা কল করব</label><input id="ph" type="tel" inputmode="numeric" placeholder="01XXXXXXXXX" autocomplete="tel"><button type="button" id="cbBtn">📞 আমাকে কল করুন</button><p class="err" id="cbErr"></p></div>
+    
+    <p style="margin:18px 0 0"><button type="button" id="fbBtn" class="btn alt" style="background:linear-gradient(180deg,#4d9bff,#1877f2);border:0;cursor:pointer;font:inherit;font-weight:700">📘 আমাদের ফেসবুক পেজ</button></p><p class="note" id="fbMsg" style="min-height:1.3em;margin-top:8px"></p>
+    <p class="note">📍 চট্টগ্রাম</p>
+  </div>
+</div></section>
 
-    // Reveal sections as they enter the viewport
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    // Dynamic copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Contact form: prepare an email draft using the visitor's email application.
-    // Replace the placeholder below with your real public email address.
-    const YOUR_EMAIL = 'your.email@example.com';
-    document.getElementById('contactForm').addEventListener('submit', event => {
-      event.preventDefault();
-      const data = new FormData(event.currentTarget);
-      const subject = encodeURIComponent(data.get('subject'));
-      const body = encodeURIComponent(
-        `Name: ${data.get('name')}\nEmail: ${data.get('email')}\n\n${data.get('message')}`
-      );
-      window.location.href = `mailto:${YOUR_EMAIL}?subject=${subject}&body=${body}`;
-    });
-  </script>
+<button id="pb" type="button" aria-label="ডিজাইন ও রং বদলান">🎨</button>
+<div id="pp" hidden>
+  <h4>মোড</h4>
+  <div class="row"><button class="opt" data-m="light" type="button">☀️ লাইট</button><button class="opt" data-m="dark" type="button">🌙 ডার্ক</button><button class="opt" data-m="auto" type="button">🌓 অটো</button></div>
+  <h4>রং</h4>
+  <div class="row"><button class="sw" data-c="rose" type="button" aria-label="গোলাপি" style="background:linear-gradient(135deg,#b8325f,#e88aa8)"></button><button class="sw" data-c="purple" type="button" aria-label="বেগুনি" style="background:linear-gradient(135deg,#7b3fb8,#b995e8)"></button><button class="sw" data-c="teal" type="button" aria-label="সবুজ" style="background:linear-gradient(135deg,#0f8b84,#6fd0c8)"></button><button class="sw" data-c="gold" type="button" aria-label="সোনালি" style="background:linear-gradient(135deg,#b8791a,#f0c36b)"></button><button class="sw" data-c="blue" type="button" aria-label="নীল" style="background:linear-gradient(135deg,#2563eb,#8ab4f8)"></button></div>
+  <h4>ডিজাইন</h4>
+  <div class="row" style="margin-bottom:0"><button class="opt" data-s="3d" type="button">৩ডি</button><button class="opt" data-s="flat" type="button">সাদাসিধে</button></div>
+</div>
+<nav class="mbar" aria-label="যোগাযোগ"><a class="mb c" href="tel:+8801671319429">📞 কল করুন</a><a class="mb w" href="https://wa.me/8801671319429" target="_blank" rel="noopener">💬 WhatsApp</a></nav>
+<footer><div class="wrap"><div class="card" style="text-align:center"><h3 style="font-size:1.4rem;margin-bottom:10px">জেসিকা বিউটি পার্লার</h3><p style="color:var(--text);font-weight:700;line-height:2">📍 ঠিকানা: চট্টগ্রাম<br>📞 মোবাইল: <a href="tel:+8801671319429" style="color:var(--pri)">01671319429</a></p></div><p style="margin-top:18px">© জেসিকা বিউটি পার্লার, চট্টগ্রাম</p></div></footer>
+<script>
+(function(){
+  var bn='০১২৩৪৫৬৭৮৯';
+  var inp=document.getElementById('ph'),err=document.getElementById('cbErr');
+  document.getElementById('cbBtn').addEventListener('click',function(){
+    var v=inp.value.replace(/[০-৯]/g,function(d){return bn.indexOf(d)}).replace(/\D/g,'');
+    if(v.indexOf('880')===0)v=v.slice(2);
+    if(!/^01[3-9]\d{8}$/.test(v)){err.textContent='সঠিক ৮৯ সংখ্যার মোবাইল নম্বর দিন (যেমন 01XXXXXXXXX)';return}
+    err.textContent='';
+    var t='আসসালামু আলাইকুম/হ্যালো, আমাকে কল করুন। আমার নম্বর: '+v;
+    window.open('https://wa.me/8801671319429?text='+encodeURIComponent(t),'_blank');
+  });
+})();
+</script>
+<script>
+(function(){
+  var r=document.documentElement,b=document.getElementById('tg');
+  function cur(){return r.getAttribute('data-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}
+  function show(){b.textContent=cur()==='dark'?'☀️':'🌙'}
+  try{var s=localStorage.getItem('jk-theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
+  show();
+  b.addEventListener('click',function(){
+    var n=cur()==='dark'?'light':'dark';
+    r.setAttribute('data-theme',n);show();
+    try{localStorage.setItem('jk-theme',n)}catch(e){}
+  });
+})();
+</script>
+<script>
+(function(){
+  var els=document.querySelectorAll('header.hero+section .card');
+  if(!('IntersectionObserver' in window)||!els.length)return;
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=(i*0.12)+'s';io.observe(el)});
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},2500);
+})();
+</script>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('.card:not(.rv), details, .cta');
+  if(!els.length)return;
+  document.documentElement.classList.add('js');
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(el,i){el.classList.add('rv');el.style.transitionDelay=((i%4)*0.1)+'s';io.observe(el)});
+  setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},4000);
+})();
+</script>
+<script>
+(function(){
+  var r=document.documentElement,tg=document.getElementById('tg'),pp=document.getElementById('pp'),pb=document.getElementById('pb');
+  var P={rose:{l:['#b8325f','#e88aa8','#fde7ee','#f2d5de','#8f2347'],d:['#f07aa2','#b8325f','#33222a','#44303a','#7a1d3d']},purple:{l:['#7b3fb8','#b995e8','#f1e8fd','#e0d2f5','#57268a'],d:['#b58af0','#7b3fb8','#2a2036','#3b2f4a','#46216f']},teal:{l:['#0f8b84','#6fd0c8','#e3f6f4','#cdeae7','#09635e'],d:['#4fd1c5','#0f8b84','#1d2d2c','#2b4240','#07524e']},gold:{l:['#b8791a','#f0c36b','#fdf1d9','#f1e0bd','#8a5a0f'],d:['#f2b94b','#b8791a','#332a18','#4a3d22','#6d460b']},blue:{l:['#2563eb','#8ab4f8','#e6efff','#d3e0fb','#1a44a8'],d:['#7aa7ff','#2563eb','#1c2638','#2b3a55','#183a8a']}};
+  var names=['--pri','--pri2','--soft','--line','--bsh'];
+  function get(k,d){try{return localStorage.getItem(k)||d}catch(e){return d}}
+  function put(k,v){try{if(v===null)localStorage.removeItem(k);else localStorage.setItem(k,v)}catch(e){}}
+  function mode(){return r.getAttribute('data-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}
+  function apply(){
+    var a=get('jk-acc','rose'),p=P[a]||P.rose,m=mode(),v=p[m==='dark'?'d':'l'];
+    names.forEach(function(n,i){r.style.setProperty(n,v[i])});
+    r.style.setProperty('--hg1',p.l[0]);r.style.setProperty('--hg2',p.l[1]);
+    if(tg)tg.textContent=m==='dark'?'\u2600\ufe0f':'\ud83c\udf19';
+    var sel=get('jk-theme','auto'),st=get('jk-style','3d');
+    pp.querySelectorAll('.sw').forEach(function(b){b.classList.toggle('on',b.dataset.c===a)});
+    pp.querySelectorAll('[data-m]').forEach(function(b){b.classList.toggle('on',b.dataset.m===sel)});
+    pp.querySelectorAll('[data-s]').forEach(function(b){b.classList.toggle('on',b.dataset.s===st)});
+    if(st==='flat')r.setAttribute('data-style','flat');else r.removeAttribute('data-style');
+  }
+  pb.addEventListener('click',function(e){e.stopPropagation();pp.hidden=!pp.hidden});
+  pp.addEventListener('click',function(e){
+    e.stopPropagation();
+    var t=e.target.closest('button');if(!t)return;
+    if(t.dataset.c){put('jk-acc',t.dataset.c)}
+    if(t.dataset.m){var m=t.dataset.m;if(m==='auto'){r.removeAttribute('data-theme');put('jk-theme',null)}else{r.setAttribute('data-theme',m);put('jk-theme',m)}}
+    if(t.dataset.s){put('jk-style',t.dataset.s)}
+    apply();
+  });
+  document.addEventListener('click',function(){pp.hidden=true});
+  new MutationObserver(apply).observe(r,{attributes:true,attributeFilter:['data-theme']});
+  try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',apply)}catch(e){}
+  apply();
+})();
+</script>
+<script>
+(function(){
+  var n=document.getElementById('nm');if(!n)return;
+  var t=n.textContent;n.textContent='';
+  for(var i=0;i<t.length;i++){var s=document.createElement('span');s.textContent=t[i];s.setAttribute('aria-hidden','true');s.style.animationDelay=(i*0.3)+'s';n.appendChild(s)}
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('hBtn');if(!b)return;
+  var bn='০১২৩৪৫৬৭৮৯',g=function(i){return document.getElementById(i)};
+  try{g('hd').min=new Date().toISOString().slice(0,10)}catch(e){}
+  b.addEventListener('click',function(){
+    var n=g('hn').value.trim(),a=g('ha').value.trim(),e=g('hErr');
+    var p=g('hp').value.replace(/[০-৯]/g,function(d){return bn.indexOf(d)}).replace(/\D/g,'');
+    if(p.indexOf('880')===0)p=p.slice(2);
+    if(!n){e.textContent='আপনার নাম লিখুন';return}
+    if(!/^01[3-9]\d{8}$/.test(p)){e.textContent='সঠিক ১১ সংখ্যার মোবাইল নম্বর দিন (যেমন 01XXXXXXXXX)';return}
+    if(!a){e.textContent='ঠিকানা লিখুন';return}
+    e.textContent='';
+    var L=['আসসালামু আলাইকুম, বাসায়/অনুষ্ঠানে সার্ভিস নিতে চাই।','নাম: '+n,'মোবাইল: '+p,'ঠিকানা: '+a,'সেবা: '+g('hs').value];
+    if(g('hd').value)L.push('তারিখ: '+g('hd').value);
+    if(g('ht').value)L.push('সময়: '+g('ht').value);
+    if(g('hm').value.trim())L.push('অতিরিক্ত তথ্য: '+g('hm').value.trim());
+    window.open('https://wa.me/8801671319429?text='+encodeURIComponent(L.join('\n')),'_blank');
+  });
+})();
+</script>
+<script>
+(function(){
+  var cs=document.querySelectorAll('.hlbox~.grid .card');
+  cs.forEach(function(c){
+    var ps=c.querySelectorAll('p');if(ps.length<2)return;
+    var t=ps[0].textContent.replace(/[\u201c\u201d]/g,'').trim();
+    var parts=ps[1].textContent.replace('\u2014','').split(',');
+    var nm=parts[0].trim(),pl=(parts[1]||'').trim();
+    c.classList.add('rev');c.textContent='';
+    function mk(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+    c.appendChild(mk('div','rq','\u201c'));
+    c.appendChild(mk('div','rs','\u2605\u2605\u2605\u2605\u2605'));
+    c.appendChild(mk('p','rt','\u201c'+t+'\u201d'));
+    var f=mk('div','rf');f.appendChild(mk('span','av',nm.charAt(0)));
+    var d=document.createElement('div');d.appendChild(mk('b','',nm));if(pl)d.appendChild(mk('small','','\ud83d\udccd '+pl));
+    f.appendChild(d);c.appendChild(f);
+  });
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('fbBtn'),m=document.getElementById('fbMsg'),t;
+  if(!b)return;
+  b.addEventListener('click',function(){
+    m.textContent='ফেসবুক পেজ শীঘ্রই আসছে। এখন কল বা WhatsApp-এ যোগাযোগ করুন।';
+    clearTimeout(t);t=setTimeout(function(){m.textContent=''},4000);
+  });
+})();
+</script>
 </body>
 </html>
